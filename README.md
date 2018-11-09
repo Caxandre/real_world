@@ -1,1 +1,1 @@
-### Chirper
+### Module 03 Project - React Redux - Lesson 07
