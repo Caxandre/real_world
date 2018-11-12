@@ -2,6 +2,9 @@ import { getInitialData } from '../utils/API'
 import { receiveUsers } from '../actions/users'
 import { receiveTweets } from '../actions/tweets'
 
+
+/* == HANDLE == */
+// 1. handleInidialData
 export function handleInidialData() {
     return (dispatch) => {
         return getInitialData()
@@ -11,3 +14,4 @@ export function handleInidialData() {
             })
     }
 }
+// ---> END HANDLE <---
