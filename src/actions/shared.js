@@ -1,7 +1,9 @@
 import { getInitialData } from '../utils/API'
 import { receiveUsers } from '../actions/users'
 import { receiveTweets } from '../actions/tweets'
+import { setAuthedUser } from '../actions/authedUser'
 
+const AUTHED_ID = 'tylermcginnis'
 
 /* == HANDLE == */
 // 1. handleInidialData
@@ -11,6 +13,7 @@ export function handleInidialData() {
             .then(({ users, tweets }) => {
                 dispatch(receiveUsers(users))
                 dispatch(receiveTweets(tweets))
+                dispatch(setAuthedUser(AUTHED_ID))
             })
     }
 }
