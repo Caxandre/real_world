@@ -8,11 +8,13 @@ class App extends Component {
     this.props.dispatch(handleInitialData())
   }
   render() {
+    console.log(this.props)
     return (
       <div>
         {this.props.loading === true
           ? null
-          : <Dashboard />}
+          : <Dashboard />
+        }
       </div>
     )
   }
